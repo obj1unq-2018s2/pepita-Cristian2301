@@ -46,6 +46,20 @@ object mijo {
 	}
 }
 
+object mijo{
+	var estaMojado = false
+	method mojarse(){ estaMojado=true }
+	method secarse(){estaMojado = false  }
+	method energiaPorGramo(){
+	if(estaMojado){
+	    return 20
+	}
+	else{ return 25
+		}
+		
+		}
+}
+
 object canelones{
 	var joulesPorGramo = 20
 	

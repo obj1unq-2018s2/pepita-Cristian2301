@@ -4,8 +4,8 @@ import comidas.*
 object pepita {
 	var energia = 0
 	
-	method energia() { 
-		return energia
+	method energia() {
+		return energia 
 	}
 	
 	method comer(cosa, gramos) { 
