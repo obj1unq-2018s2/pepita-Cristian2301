@@ -30,57 +30,57 @@ object sorgo {
 	}
 }
 
-object mijo {
-	var joules = 20
+object mijo{
+	var estaMojado = false
 	
-	method mojarse(){
-		joules = 15
+	method mojarse(){ 
+		estaMojado = true
 	}
 	
 	method secarse(){
-		joules = 20
+		estaMojado = false
 	}
 	
 	method energiaPorGramo(){
-		return joules
-	}
-}
-
-object mijo{
-	var estaMojado = false
-	method mojarse(){ estaMojado=true }
-	method secarse(){estaMojado = false  }
-	method energiaPorGramo(){
-	if(estaMojado){
-	    return 20
-	}
-	else{ return 25
-		}
+	    if(estaMojado){
+	      return 15 
+	    }
+	    else{ 
+	  	  return 20
+	    }
 		
-		}
+    }
 }
 
 object canelones{
-	var joulesPorGramo = 20
+	var tienenSalsa = false
+	var tienenQueso = false
 	
     method conSalsa(){
-    	joulesPorGramo = 25
+    	tienenSalsa = true 
     }
     
     method conQueso(){
-    	joulesPorGramo = 27
+    	tienenQueso = true
     }
     
-    method conQuesoYSalsa(){
-    	joulesPorGramo = 32
+    method sinQueso(){
+    	tienenQueso = false
     }
     
-    method sinAderezos(){
-    	joulesPorGramo = 20
+    method sinSalsa(){
+    	tienenSalsa = false
     }
     
 	method energiaPorGramo(){
-		return joulesPorGramo
+	   var joules = 20
+		 if(tienenSalsa){
+		 	 joules += 5
+		 }
+		 if(tienenQueso){
+		 	 joules += 7
+		 }
+		 return joules
 	}
 }
 	
