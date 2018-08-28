@@ -1,0 +1,11 @@
+import pepita.*
+
+describe "pepita"{
+test "energia inicial es o"{
+	assert.equals(0, pepita.energia())
+}
+test "energia despues de llegar a lugar"{
+	pepita.visitar(patagonia)
+	assert.equals(30, pepita.energia())
+}
+}
