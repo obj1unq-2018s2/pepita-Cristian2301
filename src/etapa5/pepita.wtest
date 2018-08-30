@@ -1,11 +1,21 @@
 import pepita.*
+import destinos.*
+import comidas.*                                                        
 
 describe "pepita"{
-test "energia inicial es o"{
-	assert.equals(0, pepita.energia())
-}
-test "energia despues de llegar a lugar"{
-	pepita.visitar(patagonia)
-	assert.equals(30, pepita.energia())
-}
+	test  "energia arranca en 0"{
+		assert.equals(0, pepita.energia())
+	}
+	test  "energia luego de llegar a destino"{
+		pepita.visitar(patagonia)
+		assert.equals(30, pepita.energia())
+	}
+	test "energia luego de llegar a destino segun temporada"{
+		pepita.visitar(marDelPlata)
+		assert.equals(80, pepita.energia())
+	}
+    test "energia luego de llegar al noroeste"{
+    	pepita.visitar(noroeste)
+    	assert.equals(0, pepita.energia())
+    }
 }

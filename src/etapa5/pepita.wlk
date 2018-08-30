@@ -1,5 +1,5 @@
 import comidas.*
-
+import destinos.*
 /*
  * Agregar
  * - los objetos que representan a los posibles destinos
@@ -7,7 +7,7 @@ import comidas.*
  */
  
 object pepita {
-	var energia
+	var energia = 0
 	method energia() { 
 		return energia
 	}

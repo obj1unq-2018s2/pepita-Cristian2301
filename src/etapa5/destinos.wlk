@@ -1,3 +1,5 @@
+import pepita.*
+
 object patagonia {
 	
 	method energiaRevitalizadora(){
@@ -5,9 +7,9 @@ object patagonia {
 	}
 }
 
-object sierrasCordobezas(){
+object sierrasCordobesas {
 	method energiaRevitalizadora(){
-		return 30
+		return 70
 	}
 }
 
@@ -29,3 +31,12 @@ object temporada {
 		return esTemporadaAlta
 	}
 }
+
+object noroeste{
+	method energiaRevitalizadora(){
+		return pepita.energia() * 0.1
+	}
+}
+
+
+

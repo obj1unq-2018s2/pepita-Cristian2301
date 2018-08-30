@@ -140,16 +140,18 @@ object pepita {
 
 // ROQUE ENTRENA DISTINTOS ANIMALES
 object roque {
-	var animalVolador = pepita
+	var pupilo = pepita
 	
 	method tuPupiloEs(ave) {
-		animalVolador = ave
+		pupilo = ave
 	}
-	 
 	method entrenar() { 
-		animalVolador.volar(10)
-		animalVolador.comer(alpiste, 300)
-		animalVolador.volar(5)
-		animalVolador.haceLoQueQuieras()
+		pupilo.volar(10)
+		pupilo.comer(alpiste, 300)
+		pupilo.volar(5)
+		pupilo.haceLoQueQuieras()
 	} 
+	method pupiloActual(){
+		return pupilo
+	}
 }

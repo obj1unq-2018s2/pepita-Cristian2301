@@ -129,4 +129,6 @@ object pipa {
     
 	method haceLoQueQuieras() { }   // queda asi
 	// pregunta: ¿por qué es necesario agregar este método, sin código
+	// porque todos los objects deben tener los mismos metodos ya que cuando roque quiera decirle a un animal haceLoQueQuieras, los que  
+	// tienen el metodo haceLoQueQuieras lo van a entender pero los que no lo tienen NO. A esto se le llama Polimorfismo
 }
